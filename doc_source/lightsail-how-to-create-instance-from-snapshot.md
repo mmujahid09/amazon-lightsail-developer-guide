@@ -42,3 +42,5 @@ For more information about key\-only and key\-value tags, see [Tags in Amazon Li
 1. Choose **Create instance**\.
 
    Lightsail takes you to the management page for your new instance, and you can start managing your new instance\.
+   
+   Note: It is recommended to perform sysprep operation before creating a snapshot. Instances launched from snapshots that were not sysprepped can cause issues while generating the default password. To connect to instances that were launched using snapshots without sysprepping, use the default administrator password of the parent instance. Additionally the instance can be connected only via the RDP client and webconsole will not work.
